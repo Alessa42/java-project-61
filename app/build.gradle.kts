@@ -2,7 +2,7 @@ plugins {
     id("application")
     id("java")
     id("com.github.ben-manes.versions") version "0.50.0"
-
+    id("checkstyle")
 
 }
 application { mainClass.set("hexlet.code.App") }
