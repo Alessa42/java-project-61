@@ -3,7 +3,6 @@ plugins {
     id("java")
     id("com.github.ben-manes.versions") version "0.50.0"
     id("checkstyle")
-
 }
 application { mainClass.set("hexlet.code.App") }
 group = "hexlet.code"
