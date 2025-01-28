@@ -33,5 +33,3 @@ public class Even {
             System.out.println("Congratulations, " + name + "!");
         }
     }
-
-
