@@ -4,23 +4,29 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
+        Scanner game = new Scanner(System.in);
             System.out.println("Please enter the game number and press Enter.");
-            System.out.println("1 - Greet");
             System.out.println("0 - Exit");
+            System.out.println("1 - Greet");
+            System.out.println("2 - Game Even-Odd");
             System.out.print("Your choice: ");
 
-            String input = scanner.nextLine();
+            String input = game.nextLine();
 
-            if (input.equals("0")) {
+            switch(input) {
+                case "0":
                 System.out.println("Exiting...");
-                break;
-            } else if (input.equals("1")) {
+                    break;
+                case "1":
+                Cli.run();
+                    break;
+                case "2":
                 Even.gameEven();
-            } else {
+                    break;
+                default:
                 System.out.println("Invalid choice. Please try again.");
+                    break;
             }
+        game.close();
         }
     }
-}
