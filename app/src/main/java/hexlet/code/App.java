@@ -9,6 +9,7 @@ public class App {
             System.out.println("0 - Exit");
             System.out.println("1 - Greet");
             System.out.println("2 - Game Even-Odd");
+            System.out.println("3 - Game Calculate");
             System.out.print("Your choice: ");
 
             String input = game.nextLine();
@@ -22,6 +23,9 @@ public class App {
                     break;
                 case "2":
                 Even.gameEven();
+                    break;
+                case "3":
+                    Calc.calculate();
                     break;
                 default:
                 System.out.println("Invalid choice. Please try again.");
