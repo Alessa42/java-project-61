@@ -16,7 +16,7 @@ public class Calc {
         boolean hasMultiply = false;
 
         // Запускаем игру
-        while (!hasPlus || !hasMinus || !hasMultiply) { // Всего 3 вопроса
+        while (!hasPlus || !hasMinus || !hasMultiply) {
             // Генерируем случайные числа и операцию
             int a = random.nextInt(100); // первое число от 0 до 99
             int b = random.nextInt(100); // второе число от 0 до 99
@@ -35,7 +35,7 @@ public class Calc {
             // Вопрос
             System.out.println("What is the result of the expression?");
             System.out.println("Question: " + a + ' ' + operator + ' ' + b);
-            System.out.print("Your answer: ");
+            System.out.println("Your answer: ");
             int userAnswer = scanner.nextInt();
 
             // Проверяем правильность ответа
