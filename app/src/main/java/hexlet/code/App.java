@@ -1,9 +1,6 @@
 package hexlet.code;
 
-import hexlet.code.games.Calc;
-import hexlet.code.games.Cli;
-import hexlet.code.games.Even;
-import hexlet.code.games.Gcd;
+import hexlet.code.games.*;
 
 import java.util.Scanner;
 
@@ -16,6 +13,7 @@ public class App {
             System.out.println("2 - Game Even-Odd");
             System.out.println("3 - Game Calculate");
             System.out.println("4 - GCD");
+            System.out.println("Progression");
             System.out.print("Your choice: ");
 
             String input = game.nextLine();
@@ -28,13 +26,19 @@ public class App {
                 Cli.run();
                     break;
                 case "2":
-                Even.gameEven();
+                Even.startGame();
                     break;
                 case "3":
-                    Calc.calculate();
+                    Calc.startGame();
                     break;
                 case "4":
-                    Gcd.nodGame();
+                    Gcd.startGame();
+                    break;
+                case "5":
+                    Progression.startGame();
+                    break;
+                case "6":
+                    PrimeNumber.startGame();
                     break;
                 default:
                 System.out.println("Invalid choice. Please try again.");
