@@ -13,7 +13,8 @@ public class App {
             System.out.println("2 - Game Even-Odd");
             System.out.println("3 - Game Calculate");
             System.out.println("4 - GCD");
-            System.out.println("Progression");
+            System.out.println("5 - Progression");
+            System.out.println("6 - Prime");
             System.out.print("Your choice: ");
 
             String input = game.nextLine();
