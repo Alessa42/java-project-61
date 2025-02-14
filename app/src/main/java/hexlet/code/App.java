@@ -24,7 +24,7 @@ public class App {
                 System.out.println("Exiting...");
                 break;
             case "1":
-                Cli.run();
+                Cli.startGame();
                 break;
             case "2":
                 Even.startGame();
