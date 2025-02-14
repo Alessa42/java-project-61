@@ -14,7 +14,6 @@ public class Calc {
             int randomOperatorIndex = random.nextInt(operators.length);
             String operator = operators[randomOperatorIndex];
             int correctAnswer = calculateAnswer(a, b, operator);
-
             questionsAndAnswers[i][0] = a + " " + operator + " " + b;
             questionsAndAnswers[i][1] = Integer.toString(correctAnswer);
         }

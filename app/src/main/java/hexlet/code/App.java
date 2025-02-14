@@ -18,7 +18,6 @@ public class App {
         System.out.println("5 - Progression");
         System.out.println("6 - Prime");
         System.out.print("Your choice: ");
-
         String input = game.nextLine();
 
         switch (input) {

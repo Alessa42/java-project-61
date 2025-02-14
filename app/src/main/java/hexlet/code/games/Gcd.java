@@ -12,7 +12,6 @@ public class Gcd {
             int a = random.nextInt(100);
             int b = random.nextInt(100);
             int correctAnswer = getNod(a, b);
-
             questionsAndAnswers[i][0] = a + " " + b;
             questionsAndAnswers[i][1] = Integer.toString(correctAnswer);
         }

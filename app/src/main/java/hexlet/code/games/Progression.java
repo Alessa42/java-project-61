@@ -40,7 +40,6 @@ public class Progression {
             questionsAndAnswers[i][0] = questionBuilder.toString();
             questionsAndAnswers[i][1] = Integer.toString(hiddenValue);
         }
-
         // Описание игры
         String gameDescription = "What number is missing in the progression?";
         // Запускаем игру

@@ -4,7 +4,6 @@ public class Engine {
     public static final int NUMBER_OF_QUESTIONS = 3;
     public static void startGame(String gameDescription, String[][] questionsAndAnswers) {
         var scanner = new Scanner(System.in);
-
         // Запрашиваем имя пользователя
         System.out.print("Welcome to the Brain Games!");
         System.out.println("May I have your name?");
