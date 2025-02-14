@@ -19,6 +19,7 @@ public class App {
         System.out.println("6 - Prime");
         System.out.print("Your choice: ");
         String input = game.nextLine();
+
         switch (input) {
             case "0":
                 System.out.println("Exiting...");
