@@ -15,6 +15,7 @@ public class PrimeNumber {
         String gameDescription = "Answer 'yes' if given number is prime. Otherwise answer 'no'";
         Engine.startGame(gameDescription, questionsAndAnswers);
     }
+
     public static boolean isPrime(int num) {
         if (num <= 1) {
             return false; // Числа 0 и 1 не являются простыми

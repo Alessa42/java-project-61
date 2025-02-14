@@ -18,7 +18,6 @@ public class Gcd {
         String gameDescription = "Find the greatest common divisor of given numbers";
         Engine.startGame(gameDescription, questionsAndAnswers);
     }
-
     private static int getNod(int a, int b) {
         return (b == 0) ? a : getNod(b, a % b);
     }
