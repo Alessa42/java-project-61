@@ -2,11 +2,12 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import java.util.Random;
 public class PrimeNumber {
+    private static final int MAX_VALUE = 100;
     public static void startGame() {
         var random = new Random();
         String[][] questionsAndAnswers = new String[Engine.NUMBER_OF_QUESTIONS][2];
         for (int i = 0; i < Engine.NUMBER_OF_QUESTIONS; i++) {
-            int number = random.nextInt(100);
+            int number = random.nextInt(MAX_VALUE);
             boolean isPrime = isPrime(number);
             String correctAnswer = isPrime ? "yes" : "no";
             questionsAndAnswers[i][0] = Integer.toString(number);
