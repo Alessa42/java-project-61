@@ -15,7 +15,7 @@ public class Gcd {
             questionsAndAnswers[i][0] = a + " " + b;
             questionsAndAnswers[i][1] = Integer.toString(correctAnswer);
         }
-        String gameDescription = "Find the greatest common divisor of given numbers";
+        String gameDescription = "Find the greatest common divisor of given numbers.";
         Engine.startGame(gameDescription, questionsAndAnswers);
     }
     private static int getNod(int a, int b) {

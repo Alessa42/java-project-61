@@ -12,7 +12,7 @@ public class PrimeNumber {
             questionsAndAnswers[i][0] = Integer.toString(number);
             questionsAndAnswers[i][1] = correctAnswer;
         }
-        String gameDescription = "Answer 'yes' if given number is prime. Otherwise answer 'no'";
+        String gameDescription = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
         Engine.startGame(gameDescription, questionsAndAnswers);
     }
 
