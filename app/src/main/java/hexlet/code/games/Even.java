@@ -4,11 +4,12 @@ import java.util.Random;
 import hexlet.code.Engine;
 
 public class Even {
+    private static final int MAX_VALUE = 100;
     public static void startGame() {
         var random = new Random();
         String[][] questionsAndAnswers = new String[Engine.NUMBER_OF_QUESTIONS][2];
         for (int i = 0; i < Engine.NUMBER_OF_QUESTIONS; i++) {
-            int number = random.nextInt(100);
+            int number = random.nextInt(MAX_VALUE);
             questionsAndAnswers[i][0] = Integer.toString(number);
             questionsAndAnswers[i][1] = (number % 2 == 0) ? "yes" : "no";
         }

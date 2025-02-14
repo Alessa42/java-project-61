@@ -3,14 +3,15 @@ import hexlet.code.Engine;
 
 import java.util.Random;
 public class Calc {
+    private static final int MAX_VALUE = 100;
     public static void startGame() {
         var random = new Random();
         String[][] questionsAndAnswers = new String[Engine.NUMBER_OF_QUESTIONS][2]; // 3 вопроса
         String[] operators = {"+", "-", "*"}; // Операторы
 
         for (int i = 0; i < Engine.NUMBER_OF_QUESTIONS; i++) {
-            int a = random.nextInt(100);
-            int b = random.nextInt(100);
+            int a = random.nextInt(MAX_VALUE);
+            int b = random.nextInt(MAX_VALUE);
             int randomOperatorIndex = random.nextInt(operators.length);
             String operator = operators[randomOperatorIndex];
             int correctAnswer = calculateAnswer(a, b, operator);
