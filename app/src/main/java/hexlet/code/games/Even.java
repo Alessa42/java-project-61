@@ -12,6 +12,7 @@ public class Even {
             questionsAndAnswers[i][0] = Integer.toString(number);
             questionsAndAnswers[i][1] = (number % 2 == 0) ? "yes" : "no"; // Проверяем четность
         }
+
         String gameDescription = "Answer 'yes' if the number is even, otherwise answer 'no'"; // Описание игры
         Engine.startGame(gameDescription, questionsAndAnswers);
     }

@@ -20,7 +20,6 @@ public class Calc {
         String gameDescription = "What is the result of the expression?";
         Engine.startGame(gameDescription, questionsAndAnswers);
     }
-
     private static int calculateAnswer(int a, int b, String operator) {
         return switch (operator) {
             case "+" -> a + b;
